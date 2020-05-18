@@ -5,7 +5,7 @@ photos/
 *vscode/
 templates/
 Л*.docx
-~*.docx
+~*.*
 *.pdf
 *.xml
 

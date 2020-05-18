@@ -6,7 +6,7 @@ import numpy as np
 def align_templates(templates_dir, pics_count=3, types_count=3, gathered=True):
     '''
     UNUSED!
-    
+
     Resize templates of similar type to make sure their height and width align
     Third argument must be minimal of all types count across all pictures.
     Thus, it ignores templates of types not present in all of pictures.
@@ -115,7 +115,7 @@ def match_template(photos_paths, template_path, method_names):
             local_rectangles = [Rectangle(loc, height, width) for loc in locs]
             values = np.append(values, opt_values)
             rectangles = np.append(rectangles, local_rectangles)
-            min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(res)
+            #min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(res)
 
         if not 'NORMED' in md:
             #unable to choose maximum of all, so just draw every single rectangle
